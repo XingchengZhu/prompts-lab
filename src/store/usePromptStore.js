@@ -4,11 +4,11 @@ import { persist } from 'zustand/middleware';
 export const usePromptStore = create(
   persist(
     (set) => ({
-      // ✅ 新增：主题状态，默认为 'dark'
+      // ✅ 默认主题状态
       theme: 'dark',
       toggleTheme: () => set((state) => ({ theme: state.theme === 'dark' ? 'light' : 'dark' })),
 
-      // 默认数据
+      // 🚀 默认提示词数据
       prompts: [
         {
           id: '1',
@@ -67,7 +67,7 @@ export const usePromptStore = create(
       })),
     }),
     {
-      name: 'prompts-storage',
+      name: 'prompts-storage-v2', // 👈 关键修改：改名以强制重置缓存
     }
   )
 );
