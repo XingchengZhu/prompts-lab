@@ -4,7 +4,11 @@ import { persist } from 'zustand/middleware';
 export const usePromptStore = create(
   persist(
     (set) => ({
-      // 🚀 升级版默认数据：覆盖 Coding, Writing, AI Art, Marketing
+      // ✅ 新增：主题状态，默认为 'dark'
+      theme: 'dark',
+      toggleTheme: () => set((state) => ({ theme: state.theme === 'dark' ? 'light' : 'dark' })),
+
+      // 默认数据
       prompts: [
         {
           id: '1',

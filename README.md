@@ -12,7 +12,7 @@
   
   <br>
   
-  [**🚀 Live Demo / 在线体验**](https://prompts-lab.vercel.app)
+  [**🚀 Live Demo / 在线体验**](https://prompts-lab-two.vercel.app)
   
   <br>
 </div>
