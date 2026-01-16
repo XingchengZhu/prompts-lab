@@ -65,7 +65,7 @@ Here are some examples of how you can use Prompts Lab:
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/xingchengzhu/prompts-lab.git](https://github.com/xingchengzhu/prompts-lab.git)
+    git clone https://github.com/xingchengzhu/prompts-lab.git
     cd prompts-lab
     ```
 
