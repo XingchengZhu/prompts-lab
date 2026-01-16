@@ -2,19 +2,12 @@
 
 :root {
   font-family: 'JetBrains Mono', system-ui, -apple-system, sans-serif;
+  color-scheme: dark; /* 👈 强制浏览器识别为深色 */
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  /* 基础过渡效果 */
-  @apply transition-colors duration-300 ease-in-out;
-  /* 默认(亮色)模式下的样式 */
-  @apply bg-zinc-50 text-zinc-900 selection:bg-indigo-500/20;
-}
-
-/* 🌑 深色模式样式 */
-/* 当 html 标签有 .dark 类时，body 应用以下样式 */
-html.dark body {
+  /* 强制应用深色背景和文字 */
   @apply bg-zinc-950 text-zinc-200 selection:bg-indigo-500/30;
 }
